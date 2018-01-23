@@ -1,0 +1,96 @@
+img{
+    width:100%;
+    float:left;
+    margin:1.66%;
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    margin-left:1.66%;
+    font-size:23px;
+    font-weight:800;
+    text-transform: uppercase;
+    border-bottom:2px solid red;
+    width:30%;
+    padding-bottom: 20px;
+}
+p{
+    font-family: 'Pacifico', cursive;
+    font-size:35px;
+    text-align: center;
+}
+.container{
+    position:relative;
+    width:auto;
+}
+.image{
+    opacity: 1;
+    display: block;
+    width: 30%;
+    height: auto;
+    transition:.5s ease;
+    backface-visibility: hidden;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
+.middle{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.container: hover .image{
+    opacity: 1;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  padding: 20px 30px;
+}
+body{
+    background-color: hsla(0, 100%, 70%, 0.3);
+}
+.image:hover{
+ -webkit-transform: rotate(380deg) scale(1.5);
+    -moz-transform: rotate(380deg) scale(1.5);
+    -o-transform: rotate(380deg) scale(1.5);
+    transform: rotate(380deg) scale(1.5);
+    z-index: 10;
+}
+.section-title {
+  margin:10px;
+  color: rgba(33,33,33,0.6);
+  font-size: 28px;
+  text-align: center;
+  padding-right:30%;
+  padding-left: 30%;
+}
+.footer {
+  padding: 20px 40px 30px;
+}
+  .social-media {
+    text-align: center;
+  }
+.copyrite{
+    font-size: 15px;
+}
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
